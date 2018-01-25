@@ -1,0 +1,7 @@
+if (( $(wc -l < ./my-artifact2.html) > 0 )) 
+then
+	echo 'Perfect';
+else
+	echo 'Fail';
+	exit 500;
+fi
